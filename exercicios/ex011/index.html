@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias flexiveis</title>
+</head>
+<body>
+    <h1>Testando fotos</h1>
+    <p>Neste exemplo, cada imagem vai ajustar ao tamanho da tela,do pequeno ao maior:</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1100px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5.<p>
+    <audio src="midia/dracula's lunch -- op-z cover.mp3" controls autoplay></audio> <!--formatos: mp3, wav e ogg-->
+    <p>Caso seja necessário utilizar mais de um formato de áudio é preciso escrever o código da seguinte maneira:</p>
+    <pre>
+        <code>
+            &lt;audio preload="metadata" autoplay controls loop&gt;
+                &lt;source&gt; src="midia/dracula's lunch -- op-z cover.mp3" type="audio/mpeg">
+                &lt;source&gt; src="midia/dracula's lunch -- op-z cover.ogg" type="audio/ogg">
+                &lt;source&gt; src="midia/dracula's lunch -- op-z cover.wav" type="audio/wav">
+            &lt;/audio&gt;
+        </code>
+    </pre>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/dracula's lunch -- op-z cover.mp3" type="audio/mpeg">
+        <source src="midia/dracula's lunch -- op-z cover.ogg" type="audio/ogg">
+        <source src="midia/dracula's lunch -- op-z cover.wav" type="audio/wav">
+        <p>Infelizmente o seu navegador não consegue reproduzir áudio. <a href="midia/dracula's lunch -- op-z cover.mp3">Clique aqui para baixar o arquivo MP3.</a></p>
+    </audio>
+</body>
+</html>

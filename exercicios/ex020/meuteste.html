@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu teste de Pseudoclasses</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        div {
+           
+            display: inline-block;
+            background-color: rgba(20, 124, 199, 0.359);
+            border: 1px solid black;
+            text-align: center;
+            height: 100px;
+            width: 200px;
+        }
+        div > ol {
+            display: none;
+        }
+        div:hover > ol {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Fazendo testes com Pseudo-classes</h1>
+    <p>Esses são alguns testes</p>
+    <div>menu
+        <ul>
+            <li>QUEM SOMOS</li>
+            <li>Contato</li>
+            <li>Nossos produtos</li>
+        </ul>
+    </div>
+    <div>opções
+        <ul>
+            <li>vidros</li>
+            <li>plasticos</li>
+            <li>ferro</li>
+        </ul>
+    </div>
+    <div>cores
+        <ul>
+            <li>Azul</li>
+            <li>Verde</li>
+            <li>Preto</li>
+        </ul>
+    </div>
+</body>
+</html>
