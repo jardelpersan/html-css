@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhando videos</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+        body {
+            background-color: burlywood;
+            font-family: 'Poetsen One';
+        }
+        h1 {
+            text-align: center;
+        }
+        section {
+            background-color: brown;
+            height: 700px;
+            padding: 10px;
+            
+        }
+        #d1 {
+            background-color: lightsalmon;
+            height: 300px;
+            max-width: 700px;
+            position: relative;
+            margin:auto;
+            margin-bottom: 10px;
+        }
+        #d2 {
+            background-color: lightseagreen;
+            height: 300px;
+            max-width: 700px;
+            position: relative;
+            margin: auto;
+        }
+        #d1 > iframe {
+            position: absolute;
+            height: 280px;
+           left: 50%;
+           top: 50%;
+           transform: translate(-50%, -50%)
+        }
+        #d2 > iframe {
+            position: absolute;
+            height: 280px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Alinhamento Vertical de Vídeos</h1>
+    <section>
+        <div id="d1">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3oSIqIqzN3M?si=RkFbFGv4YHP_TJbv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div id="d2">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LWU2OR19ZG4?si=fM7kmaPNx87aCOp3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+</body>
+</html>
